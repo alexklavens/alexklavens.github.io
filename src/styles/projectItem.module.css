@@ -1,0 +1,153 @@
+.wholeDamnThing {
+  margin-bottom: 30px;
+  clear:both;
+}
+.items {
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.listItem {
+  display: inline-block;
+  margin: 5px 0;
+  margin-right: 10px;
+  padding: 2px 10px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-family: 'Overpass Mono';
+  border: 1px solid black;
+  border-radius: 1px;
+  font-size: .8rem;
+
+}
+
+.image {
+  width: 47%;
+  /* float: left; */
+  margin-right: 20px;
+  margin-top: 7px;
+}
+
+.details {
+  display: block;
+  margin: 0px 0px;
+  max-width: 49%;
+  float: right;
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Roboto'; */
+  /* font-size: 1.2rem; */
+  /* width: 400px; */
+  /* margin-left: 100px; */
+}
+
+.details a {
+  color: hsla(0,0%,0%,0.8);
+
+}
+
+.description {
+  /* font-size: .9rem; */
+  /* max-width: 47%; */
+  opacity: .8;
+  font-style: italic;
+
+}
+
+.projectLink {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid hsla(0,0%,0%,0.8);
+  color: hsla(0,0%,0%,0.8);
+
+
+}
+
+.techUsed {
+  margin-top: 40px;
+  max-width: 70%;
+}
+
+.title {
+  font-variant: small-caps;
+}
+
+.techUsedTitle {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.imageLink:hover {
+  opacity: .95;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .items {
+    padding-left: 0;
+    margin-top: 20px;
+
+  }
+
+  .listItem {
+    display: inline-block;
+    margin: 5px 0;
+    margin-right: 10px;
+    padding: 2px 10px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-family: 'Overpass Mono';
+    border: 1px solid black;
+  }
+
+  .image {
+    /* float: left; */
+    /* margin-right: 20px; */
+    /* margin-top: 7px; */
+    /* width: 100%; */
+  /* margin-left: calc(-100vw / 2 + 300px / 2);
+  margin-right: calc(-100vw / 2 + 300px / 2); */
+    width: 100%;
+
+
+  }
+
+  .details {
+    display: block;
+    margin: 0px 0px;
+    width: 100%;
+    float: none;
+    max-width: none;
+    /* max-width: 49%; */
+    /* float: right; */
+    /* width: 400px; */
+    /* margin-left: 100px; */
+  }
+
+  .details a {
+    color: hsla(0,0%,0%,0.8);
+
+  }
+
+  .projectLink {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid hsla(0,0%,0%,0.8);
+    color: hsla(0,0%,0%,0.8);
+
+
+  }
+
+  .techUsed {
+    max-width: none;
+  }
+
+
+}
+
+/* .details::first-letter {
+  font-size: 50px;
+} */

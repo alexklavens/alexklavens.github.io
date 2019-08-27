@@ -1,0 +1,43 @@
+.tcvHeadline {
+  font-size: 1.3rem;
+}
+
+.tcvLink {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+  font-size: .9rem;
+  /* padding: 10px; */
+  /* border: 1px solid black; */
+}
+
+.titleLink {
+  text-decoration: none;
+  color: inherit;
+  /* font-variant: small-caps; */
+}
+
+.tcvDates  {
+  display: inline;
+  font-style: italic;
+  /* border-right: 1px solid black; */
+  padding-right: 5px;
+  /* margin-right: 5px; */
+  /* padding: 2px 4px;
+  border-radius: 2px;
+  margin-right: 10px;
+  background-color: rgb(255,170,20);
+  font-size: 1em; */
+}
+
+.tcvDescription {
+  display: inline;
+}
+
+.linesplit {
+  text-align: center;
+}
+
+/* .newsHighlightDiv {
+  border-bottom: 1px dashed gray;
+} */

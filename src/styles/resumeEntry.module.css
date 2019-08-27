@@ -1,0 +1,78 @@
+.resumeEntryHeader {
+  margin-top: 20px;
+}
+
+.resumeEntryTitle {
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+  color: hsla(0,0%,0%,1);
+  display: inline-block;
+  margin-top: 0px;
+}
+
+
+.linesplit {
+  text-align: center;
+  display: none;
+}
+
+.subHeader {
+  font-size: .9rem;
+  color: hsla(0,0%,0%,0.8);
+}
+
+.jobTitle {
+
+}
+
+.dates {
+/* display: block; */
+}
+
+.bullet {
+}
+
+.descriptionItem {
+
+}
+
+.location {
+  float: right;
+  display: inline-block;
+  margin: 0px;
+  font-size: .7rem;
+  /* vertical-align: bottom; */
+}
+
+.entryHeader {
+  clear: both;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .linesplit {
+    text-align: center;
+    display: block;
+  }
+
+  .resumeEntryTitle {
+    margin-top: 10px;
+  }
+
+  .resumeEntryHeader {
+    text-align: center;
+    margin-bottom: 20px;
+    margin: auto 2em;
+    margin-bottom: 1rem;
+  }
+
+  .bullet {
+    display: none;
+  }
+  .dates {
+    display: block;
+  }
+
+}
