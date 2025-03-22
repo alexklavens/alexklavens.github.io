@@ -1,77 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Klavens</title>
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Raleway:200);
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
-        html,
-        p {
-            font-family: Raleway, sans-serif
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        #main-block {
-            margin: 2rem auto;
-            max-width: 850px;
-            padding: 0 1rem
-        }
-
-        #siteHeader {
-            border-bottom: 1px solid black;
-            line-height: 40px;
-            padding-top: 10px;
-        }
-
-        #siteHeader h1 {
-            font-size: 2.5em;
-            font-weight: 100;
-            display: inline-block;
-            color: black
-        }
-
-        a:hover {
-            opacity: .8
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
         }
 
         a {
-            color: black
+            color: #333;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+            padding-bottom: 1px;
         }
 
-        .homepage-copy {
-            font-size: 2.3rem;
-            line-height: 50px
+        a:hover {
+            opacity: 0.8;
+            border-bottom-color: rgba(51, 51, 51, 0.6);
         }
 
-        @media only screen and (max-width:600px) {
-            .homepage-copy {
-                padding: 0 20px;
-                font-size: 1rem;
-                line-height: 30px
+        .container {
+            max-width: 850px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .header {
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #333;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 200;
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .bio p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: 1.5rem;
+        }
+
+        .subsection-title {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .clip-item {
+            margin-bottom: 2rem;
+        }
+
+        .clip-title {
+            font-size: 1.5rem;
+            font-weight: 200;
+            margin-bottom: 0.5rem;
+        }
+
+        .clip-meta {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 0.75rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 0.75rem;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .header h1 {
+                font-size: 2.8rem;
             }
 
+            .bio p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .clip-title {
+                font-size: 1.3rem;
+            }
+
+            .clip-meta {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="main-block">
-        <div id="siteHeader">
-            <h1>Alex Klavens </h1>
-        </div>
-        <p class="homepage-copy">I'm a senior software engineer at <a href="https://nytimes.com" target="_blank">The New
-                York Times</a>. I've worked at various startups including the public records search platform <a
-                href="https://www.comply.com/products/illumis" , target="_blank">illumis</a>.
-        </p>
-        <p class="homepage-copy">I'm also pursuing a part-time M.S. in journalism at <a
-                href="https://journalism.columbia.edu/" target="_blank">Columbia Journalism School</a>.
-        </p>
-        <p class="homepage-copy"> Feel free to reach out on <a href="https://linkedin.com/in/alexklavens"
-                target="_blank">LinkedIn</a> or email me at <a href="mailto:aklavens@gmail.com">aklavens@gmail.com</a>.
-        </p>
-        </ul>
-    </div>
+    <div class="container">
+        <header class="header">
+            <h1>Alex Klavens</h1>
+        </header>
 
+        <section class="section bio">
+            <p>I'm a Senior Software Engineer at <a href="https://nytimes.com" target="_blank" rel="noopener">The New
+                    York Times</a>.</p>
+
+            <p>Previously, I worked at various startups including the public records search platform
+                <a href="https://www.comply.com/products/illumis" target="_blank" rel="noopener">illumis</a>, where I
+                specialized in the
+                acquisition and processing of campaign finance records, lobbying registrations, SEC filings, and other
+                publicly available but hard-to-access data.
+            </p>
+
+            <p>I'm also a freelance journalist and an M.S. Candidate at
+                <a href="https://journalism.columbia.edu/" target="_blank" rel="noopener">Columbia Journalism
+                    School</a>.
+            </p>
+
+            <p>In college, I was a reporter for Connecticut College's <a href="https://thecollegevoice.org/"
+                    target="_blank" rel="noopener">The College Voice</a> and interned at <a href="https://www.wbur.org/"
+                    target="_blank" rel="noopener">WBUR</a>, one of Boston's NPR news stations.</p>
+        </section>
+
+        <section class="section clips">
+            <h2 class="section-title">Clips</h2>
+
+            <h3 class="subsection-title">Recent work</h3>
+            <div class="clip-item">
+                <h4 class="clip-title"><a href="https://columbianewsservice.com/2024/10/15/gop-mail-in-voting/"
+                        target="_blank" rel="noopener">After Years
+                        of Opposition, New York Republicans Say They're Embracing Mail-In Voting</a></h4>
+                <p class="clip-meta">October 15, 2024 | Columbia News Service</p>
+            </div>
+
+            <h3 class="subsection-title">Work from WBUR</h3>
+            <div class="clip-item">
+                <h4 class="clip-title">North Adams Regional Hospital Closure</h4>
+                <iframe scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/438117471%3Fsecret_token%3Ds-O2zfU&color=%231a1919&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <p class="clip-meta">August 11, 2017 | WBUR</p>
+            </div>
+
+            <h3 class="subsection-title">Past work</h3>
+            <div class="clip-item">
+                <h4 class="clip-title"><a
+                        href="https://thecollegevoice.org/2019/05/17/college-administrators-missed-key-digital-evidence-in-months-long-voyeurism-investigation/"
+                        target="_blank" rel="noopener">College Administrators Missed Key Digital Evidence in Months-Long
+                        Voyeurism
+                        Investigation</a></h4>
+                <p class="clip-meta">May 17, 2019 | The College Voice</p>
+            </div>
+
+            <div class="clip-item">
+                <h4 class="clip-title"><a
+                        href="https://thecollegevoice.org/2019/03/02/police-arrest-conn-college-sophomore-for-voyeurism-alleging-he-photographed-dozens-of-women-at-conn-and-on-nyc-subways/"
+                        target="_blank" rel="noopener">Police Arrest Conn College Sophomore For Voyeurism, Alleging He
+                        Photographed
+                        Dozens Of Women At Conn And On NYC Subways</a></h4>
+                <p class="clip-meta">March 2, 2019 | The College Voice</p>
+            </div>
+
+            <div class="clip-item">
+                <h4 class="clip-title"><a
+                        href="https://thecollegevoice.org/2019/02/18/mike-kmecs-lawyers-get-court-deadlines-postponed-claiming-medication-may-have-influenced-embezzlement/"
+                        target="_blank" rel="noopener">Mike Kmec's Lawyers Get Court Deadlines Postponed, Claiming
+                        Medication May Have
+                        Influenced Embezzlement</a></h4>
+                <p class="clip-meta">February 19, 2019 | The College Voice</p>
+            </div>
+
+            <div class="clip-item">
+                <h4 class="clip-title"><a
+                        href="https://thecollegevoice.org/2018/11/15/former-college-employee-pleads-guilty-to-stealing-173k-from-college-faces-up-to-20-years-in-prison/"
+                        target="_blank" rel="noopener">Former College Employee Pleads Guilty To Stealing $173K From
+                        College; Faces Up To 20 Years In Prison</a></h4>
+                <p class="clip-meta">November 15, 2018 | The College Voice</p>
+            </div>
+
+            <div class="clip-item">
+                <h4 class="clip-title"><a href="https://thecollegevoice.org/2018/10/10/chaos-at-the-counter/"
+                        target="_blank" rel="noopener">Chaos at the Post Office Counter</a></h4>
+                <p class="clip-meta">October 10, 2018 | The College Voice</p>
+            </div>
+
+            <div class="clip-item">
+                <h4 class="clip-title"><a href="https://flic.kr/s/aHsk6FxF9p" target="_blank" rel="noopener">Black Lives
+                        Matter Protest in Boston (Visual)</a>
+                </h4>
+                <p class="clip-meta">December 4, 2014</p>
+            </div>
+        </section>
+
+        <section class="section contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="bio p">Feel free to reach out on <a href="https://linkedin.com/in/alexklavens" target="_blank"
+                    rel="noopener">LinkedIn</a> or
+                email me at <a href="mailto:aklavens@gmail.com">aklavens@gmail.com</a>.</p>
+        </section>
+    </div>
 </body>
 
 </html>
